@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="bg.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <canvas id="c"></canvas>
+
+    <!-- Gift box element -->
+    <div id="gift-box" onclick="shakeGiftBox()">
+      <img src="giftbox.png" alt="Gift Box" />
+    </div>
+
+    <!-- Password form -->
+    <div id="password-container" class="hidden">
+      <p>Please enter the password:</p>
+      <input type="password" id="password-input" />
+      <button onclick="verifyPassword()">Submit</button>
+      <p id="error-message" style="color: red;"></p>
+    </div>
+    <div id="white-paper" class="hidden">
+      <div id="message">Happy Birthday Chittikanna!!</div>
+  </div>
+
+  <!-- Balloons -->
+  <div id="balloons" class="hidden"></div>
+    <script src="script.js" defer></script>
+    <script src="func.js" defer></script>
+
+  </body>
+</html>
